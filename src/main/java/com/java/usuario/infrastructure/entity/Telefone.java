@@ -1,10 +1,7 @@
 package com.java.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 //o lombok implementa todos os getters e setters e construtores
 @Getter
@@ -13,6 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "telefone")
+@Builder
 public class Telefone {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
